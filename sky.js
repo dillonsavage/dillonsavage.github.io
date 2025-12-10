@@ -1,8 +1,6 @@
-//window.onload = main();
 
 async function main() {
-  const colors = generateColorRange('#00008B', '#ADD8E6', 22);
-  document.body.style.backgroundColor = colors[0];
+  const colors = generateColorRange('#00008B', '#D5FFFF', 22);
   for (let j = 1; j < colors.length; j++) {    
     console.log(colors[j]);
     document.body.style.backgroundColor = colors[j];
