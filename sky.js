@@ -5,10 +5,11 @@ async function main() {
   var bg_from = generateRandomBlueHex();
   var bg_to = generateRandomBlueHex();
   const colors = generateColorRange(bg_from, bg_to, 22);
-  for (let j = 0; j < colors.length; j++) {    
+  document.body.style.backgroundColor = colors[0];
+  for (let j = 1; j < colors.length; j++) {    
     console.log(colors[j]);
     document.body.style.backgroundColor = colors[j];
-    await pause(500);
+    await pause(2500);
   }
 }
 
